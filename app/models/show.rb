@@ -29,9 +29,3 @@ class Show < ActiveRecord::Base
     Sho
   end
 end
-    
-    
-    
-    
-    
-    
