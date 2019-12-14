@@ -2,6 +2,7 @@ class Show < ActiveRecord::Base
   
   def create
     show = Show.new 
+  end 
     
   
   def highest_rating
@@ -9,12 +10,15 @@ class Show < ActiveRecord::Base
   end 
     
   def most_popular_show
+    Show.new
   end
 
   def lowest_rating
+    Show.new
   end
 
   def least_popular_show
+    Show.new
   end
 
   def ratings_sum
@@ -26,6 +30,6 @@ class Show < ActiveRecord::Base
   end
   
   def shows_by_alphabetical_order
-    Sho
+    Show.new
   end
 end
