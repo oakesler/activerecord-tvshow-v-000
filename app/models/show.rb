@@ -19,9 +19,8 @@ class Show < ActiveRecord::Base
   
   def popular_shows
     shows = Show.where("rating > ?", 5)
-end
-
-def shows_by_alphabetical_order
-  Show.order(name: :asc)
-end
-end
+  end
+  
+  def shows_by_alphabetical_order
+    Show.order(name: :asc)
+  end
