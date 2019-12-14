@@ -2,8 +2,6 @@ require "bundler/setup"
 require 'yaml'
 require 'active_record'
 
-require_all '/app'
-
 Bundler.require
 
 Dir[File.join(File.dirname(__FILE__), "../app/models", "*.rb")].each {|f| require f}
