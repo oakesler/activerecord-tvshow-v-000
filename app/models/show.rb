@@ -1,5 +1,9 @@
 class Show < ActiveRecord::Base
   
+  def create
+    show = Show.new 
+    
+  
   def highest_rating
     Show.maximum(:rating)
   end 
